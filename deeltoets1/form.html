@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Aanmelden - Opleiding CMD Amsterdam</title>
+
+		<meta charset="utf-8">
+
+		<meta name="description" content="De opleiding Communication & Multimedia Design (CMD) Amsterdam leert studenten alles over het ontwerpen van online interactieve media. Dit betekent het begrijpen, bedenken en maken van interactieve media zoals websites, mobiele applicaties en interactieve televisie. Bij het ontwerpen van interactieve media staat de mens centraal. Niet alleen als eindgebruiker van een toepassing maar ook in de context van zijn leefomgeving. Studenten doen toegepast onderzoek en leren hun ontwerpen te testen op usability, gebruikersbehoefte en meetbare eindresultaten. Ze leren werken in multidisciplinaire projectteams aan opdrachten voor echte projectpartners.">
+
+		<meta name="keywords" content="CMD,Communication,Media,Design,Amsterdam,HvA,Hogeschool">
+
+		<meta name="author" content="Tomas Harkema">
+
+	</head>
+	<body>
+		<h1>Aanmelden</h1>
+	
+		<p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!<br/>
+		Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+
+		<p><em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</em></p>
+
+		<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.<br/>
+		Voor vragen of opmerkingen kunt u contact [link: contact] met ons op.</p>
+
+		<!-- BRONNEN:
+		http://staffannoteberg.com/html5-pattern.html
+		http://www.molenaar-technologies.nl/regex-op-zn-nederlands/
+		-->
+
+		<form>
+			<fieldset>
+				<legend>Contactgegevens:</legend>
+
+				<label for="name">Naam</label>
+				<input type="text" id="name" placeholder="Naam" required><br/>
+
+				<label for="bedrijf">Bedrijf</label>
+				<input type="text" id="bedrijf" placeholder="bedrijf" required><br/>
+
+				<label for="adres">Adres</label>
+				<input type="text" id="adres" placeholder="Adres" required pattern="/^([1-9][e][\s])*([a-zA-Z]+(([\.][\s])|([\s]))?)+[1-9][0-9]*(([-][1-9][0-9]*)|([\s]?[a-zA-Z]+))?$/i" title="dutch address"><br/>
+
+				<label for="postcode">Postcode</label>
+				<input type="text" id="postcode" placeholder="Postcode" required pattern="/^[1-9][0-9]{3}[\s]?[A-Za-z]{2}$/i" title="dutch postal code"><br/>
+
+				<label for="plaats">Plaats</label>
+				<input type="text" id="plaats" placeholder="Plaats" required><br/>
+
+				<label for="telefoon">Telefoon</label>
+				<input type="text" id="telefoon" placeholder="Telefoon" required pattern="(\+?\d[- .]*){7,13}" title="international, national or local phone number"><br/>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" placeholder="Email" required><br/>
+
+			</fieldset>
+
+			<fieldset>
+
+				<legend>Ik wil mijn aanmelden:</legend>
+
+				<input type="radio" name="aanmelden" value="project" id="project"><label for="project">Voor een project</label><br/>
+				<input type="radio" name="aanmelden" value="stage" id="stage"><label for="stage">Als stagebedrijf</label>
+
+			</fieldset>
+		</form>
+
+	</body>
+</html>
