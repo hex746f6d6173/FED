@@ -66,3 +66,27 @@ video{
 	margin-bottom: 50px;
 	margin-top: 50px;
 }
+
+form{
+	margin:20px;
+}
+form fieldset{
+	border:1px solid black;
+	border-radius: 20px;
+	padding:20px;
+	margin-bottom: 20px;
+	//height:0px;
+	//overflow: hidden;
+	//transition:all 1s;
+}
+
+form input{
+	color:#ccc;
+}
+form input:focus{
+	color:#000;
+	padding:10px;
+}
+
+
+

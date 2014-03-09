@@ -11,91 +11,93 @@
 
 		<meta name="author" content="Tomas Harkema">
 
+		<link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css">
+
 	</head>
 	<body>
+		<section>
+			<h1>Aanmelden</h1>
+		
+			<p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!<br>
+			Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
 
-		<h1>Aanmelden</h1>
-	
-		<p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!<br>
-		Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+			<p><em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</em></p>
 
-		<p><em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</em></p>
+			<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.<br>
+			Voor vragen of opmerkingen kunt u contact [link: contact] met ons op.</p>
 
-		<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.<br>
-		Voor vragen of opmerkingen kunt u contact [link: contact] met ons op.</p>
+			<!-- BRONNEN:
+			http://staffannoteberg.com/html5-pattern.html
+			http://www.molenaar-technologies.nl/regex-op-zn-nederlands/
+			-->
 
-		<!-- BRONNEN:
-		http://staffannoteberg.com/html5-pattern.html
-		http://www.molenaar-technologies.nl/regex-op-zn-nederlands/
-		-->
+			<form>
+				<fieldset>
+					<legend>Contactgegevens:</legend>
 
-		<form>
-			<fieldset>
-				<legend>Contactgegevens:</legend>
+					<label for="name">Naam</label>
+					<input type="text" id="name" placeholder="Naam" required><br>
 
-				<label for="name">Naam</label>
-				<input type="text" id="name" placeholder="Naam" required><br>
+					<label for="bedrijf">Bedrijf</label>
+					<input type="text" id="bedrijf" placeholder="bedrijf" required><br>
 
-				<label for="bedrijf">Bedrijf</label>
-				<input type="text" id="bedrijf" placeholder="bedrijf" required><br>
+					<label for="adres">Adres</label>
+					<input type="text" id="adres" placeholder="Adres" required pattern="/^([1-9][e][\s])*([a-zA-Z]+(([\.][\s])|([\s]))?)+[1-9][0-9]*(([-][1-9][0-9]*)|([\s]?[a-zA-Z]+))?$/i" title="dutch address"><br>
 
-				<label for="adres">Adres</label>
-				<input type="text" id="adres" placeholder="Adres" required pattern="/^([1-9][e][\s])*([a-zA-Z]+(([\.][\s])|([\s]))?)+[1-9][0-9]*(([-][1-9][0-9]*)|([\s]?[a-zA-Z]+))?$/i" title="dutch address"><br>
+					<label for="postcode">Postcode</label>
+					<input type="text" id="postcode" placeholder="Postcode" required pattern="/^[1-9][0-9]{3}[\s]?[A-Za-z]{2}$/i" title="dutch postal code"><br>
 
-				<label for="postcode">Postcode</label>
-				<input type="text" id="postcode" placeholder="Postcode" required pattern="/^[1-9][0-9]{3}[\s]?[A-Za-z]{2}$/i" title="dutch postal code"><br>
+					<label for="plaats">Plaats</label>
+					<input type="text" id="plaats" placeholder="Plaats" required><br>
 
-				<label for="plaats">Plaats</label>
-				<input type="text" id="plaats" placeholder="Plaats" required><br>
+					<label for="telefoon">Telefoon</label>
+					<input type="text" id="telefoon" placeholder="Telefoon" required pattern="(\+?\d[- .]*){7,13}" title="international, national or local phone number"><br>
 
-				<label for="telefoon">Telefoon</label>
-				<input type="text" id="telefoon" placeholder="Telefoon" required pattern="(\+?\d[- .]*){7,13}" title="international, national or local phone number"><br>
+					<label for="email">Email</label>
+					<input type="email" id="email" placeholder="Email" required><br>
 
-				<label for="email">Email</label>
-				<input type="email" id="email" placeholder="Email" required><br>
+				</fieldset>
 
-			</fieldset>
+				<fieldset>
 
-			<fieldset>
+					<legend>Ik wil mijn aanmelden:</legend>
 
-				<legend>Ik wil mijn aanmelden:</legend>
+					<input type="radio" name="aanmelden" value="project" id="project"><label for="project">Voor een project</label><br>
+					<input type="radio" name="aanmelden" value="stage" id="stage"><label for="stage">Als stagebedrijf</label>
 
-				<input type="radio" name="aanmelden" value="project" id="project"><label for="project">Voor een project</label><br>
-				<input type="radio" name="aanmelden" value="stage" id="stage"><label for="stage">Als stagebedrijf</label>
-
-			</fieldset>
+				</fieldset>
 
 
-			<fieldset>
-				<legend>Project</legend>
+				<fieldset>
+					<legend>Project</legend>
 
-				<label for="titel">Titel</label>
-				<input type="text" name="titel" id="titel" placeholder="Titel"><br>
+					<label for="titel">Titel</label>
+					<input type="text" name="titel" id="titel" placeholder="Titel"><br>
 
-				<label for="opdrachtomschr">Opdrachtomschrijving</label>
-				<textarea name="opdrachtomschr" id="opdrachtomschr"></textarea><br>
+					<label for="opdrachtomschr">Opdrachtomschrijving</label>
+					<textarea name="opdrachtomschr" id="opdrachtomschr"></textarea><br>
 
-				<label for="doelgroepomschr">Doelgroepomschrijving</label>
-				<textarea name="doelgroepomschr" id="doelgroepomschr"></textarea><br>
+					<label for="doelgroepomschr">Doelgroepomschrijving</label>
+					<textarea name="doelgroepomschr" id="doelgroepomschr"></textarea><br>
 
-				<label for="doelstelling">Doelstelling/intentievanhetproject</label>
-				<textarea name="doelstelling" id="doelstelling"></textarea><br>
+					<label for="doelstelling">Doelstelling/intentievanhetproject</label>
+					<textarea name="doelstelling" id="doelstelling"></textarea><br>
 
-				<label for="looptijd">Looptijd</label>
-				<input type="text" name="looptijd" id="looptijd"><br>
+					<label for="looptijd">Looptijd</label>
+					<input type="text" name="looptijd" id="looptijd"><br>
 
-				<label for="deadline">Deadline</label>
-				<input type="text" name="deadline" id="deadline"><br>
+					<label for="deadline">Deadline</label>
+					<input type="text" name="deadline" id="deadline"><br>
 
-				<label for="geschikt1">Geschikt voor</label><br>
-				<input type="radio" name="geschikt1" id="eerstejaars"><label for="eerstejaars">eerstejaars studenten</label><br>
-				<input type="radio" name="geschikt1" id="tweedejaars"><label for="tweedejaars">tweedejaars studenten</label><br>
-				<input type="radio" name="geschikt1" id="derdejaars"><label for="derdejaars">derdejaars studenten</label><br>
-				<input type="radio" name="geschikt1" id="afstudeer"><label for="afstudeer">afstudeer studenten</label><br>
-				<input type="radio" name="geschikt1" id="onbekend"><label for="onbekend">onbekend</label><br>
-			</fieldset>
+					<label for="geschikt1">Geschikt voor</label><br>
+					<input type="radio" name="geschikt1" id="eerstejaars"><label for="eerstejaars">eerstejaars studenten</label><br>
+					<input type="radio" name="geschikt1" id="tweedejaars"><label for="tweedejaars">tweedejaars studenten</label><br>
+					<input type="radio" name="geschikt1" id="derdejaars"><label for="derdejaars">derdejaars studenten</label><br>
+					<input type="radio" name="geschikt1" id="afstudeer"><label for="afstudeer">afstudeer studenten</label><br>
+					<input type="radio" name="geschikt1" id="onbekend"><label for="onbekend">onbekend</label><br>
+				</fieldset>
 
-		</form>
-
+			</form>
+		</section>
 	</body>
 </html>
