@@ -1,0 +1,68 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+html{
+	-webkit-font-smoothing: antialiased;
+	font-family: helvetica;
+	
+}
+a{
+	color:black;
+	font-weight: bold;
+}
+
+body{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* waarom is er geen h*? */
+h1, h2, h3, h4, h5{
+	text-transform: uppercase;
+	text-shadow:1px 1px 1px black;
+	font-weight: normal;
+}
+p{
+	line-height: 2;
+}
+
+p em{
+	border-left:3px solid #ccc;
+	padding-left:10px;
+}
+
+article p:first-child{
+	font-weight: bold;
+}
+section > h1{
+	font-size:45pt;
+}
+section{
+	width: 960px;
+	margin:0px auto;
+}
+
+
+p + p{
+	margin-top: 20px;
+}
+
+p + h3, p + h2{
+	margin-top:20px;
+}
+
+ol{
+	border-left:3px solid #ccc;
+}
+ol > li{
+	margin-left: 40px;
+}
+img{
+	width: 100%;
+}
+video{
+	width: 100%;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
