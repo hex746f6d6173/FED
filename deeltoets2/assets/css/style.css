@@ -5,18 +5,19 @@
 html{
 	-webkit-font-smoothing: antialiased;
 	font-family: helvetica;
-	
 }
 a{
 	color:black;
 	font-weight: bold;
 }
-
 body{
 	margin-top: 3em;
 	margin-bottom: 3em;
+	background-image: url('http://20px.com/wp-content/uploads/2013/02/unicorn_pooping_a_rainbow_20px.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
 }
-
 /* waarom is er geen h*? */
 h1, h2, h3, h4, h5{
 	text-transform: uppercase;
@@ -41,6 +42,10 @@ section > h1{
 section{
 	width: 960px;
 	margin:0px auto;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 60px / 30px;
+	padding:20px;
+	box-shadow: 0px 0px 20px 0px black;
 }
 
 
@@ -100,7 +105,7 @@ form input:focus{
 	font-size: 20pt;
 }
 form textarea{
-	border-radius: 1.6pt;
+	border-radius: 1.6em;
 	border:0.625em solid black;
 }
 
@@ -108,3 +113,63 @@ input[type="radio"] + label{
 	display: inline;
 }
 
+@keyframes mymove{
+	0% {right:0%;}
+	50% {right:calc(100% - 216px);}
+	100% {right:0%;}
+}
+
+@-webkit-keyframes mymove {
+	0% {right:0%;}
+	50% {right:calc(100% - 216px)}
+	100% {right:0%;}
+}
+
+@-webkit-keyframes sizing {
+	0% {width: 150px;}
+	50% {width: 200px;}
+	100% {width: 150px;}
+}
+
+.cloud{
+	position: fixed;
+	top:0px;
+	right:0px;
+	width: auto;
+	-webkit-animation: mymove 25s, sizing 6s;
+	animation: mymove 25s, sizing 6s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	z-index: -1;
+}
+
+.cloud:nth-child(1n){
+	top:0%;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+.cloud:nth-child(2n){
+	top:20%;
+	-webkit-animation-delay: 4s;
+	animation-delay: 4s;
+}
+.cloud:nth-child(3n){
+	top:40%;
+	-webkit-animation-delay: 6s;
+	animation-delay: 6s;
+}
+.cloud:nth-child(4n){
+	top:60%;
+	-webkit-animation-delay: 8s;
+	animation-delay: 8s;
+}
+.cloud:nth-child(5n){
+	top:80%;
+	-webkit-animation-delay: 10s;
+	animation-delay: 10s;
+}
+.cloud:nth-child(6n){
+	top:100%;
+	-webkit-animation-delay: 12s;
+	animation-delay: 12s;
+}
