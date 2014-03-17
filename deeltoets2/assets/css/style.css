@@ -39,6 +39,10 @@ article p:first-child{
 section > h1{
 	font-size:45pt;
 }
+section h1:first-child:after{
+	display: block;
+	content:"~~~~~~~~~~~~~~~~~~~~~~~~";
+}
 section{
 	width: 960px;
 	margin:0px auto;
@@ -46,6 +50,9 @@ section{
 	border-radius: 60px / 30px;
 	padding:20px;
 	box-shadow: 0px 0px 20px 0px black;
+	-ms-transform:rotate(-4deg);
+	-webkit-transform:rotate(-4deg);
+	transform:rotate(-4deg);
 }
 
 
@@ -71,7 +78,11 @@ video{
 	margin-bottom: 3.125em;
 	margin-top: 3.125em;
 }
-
+video:hover{
+	-ms-transform:rotate(4deg);
+	-webkit-transform:rotate(4deg);
+	transform:rotate(4deg);
+}
 form{
 	margin:1.25em;
 }
@@ -88,6 +99,9 @@ form input{
 	padding: 0.31em;
 	border-radius: 1.6pt;
 	border:0.625em solid black;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
 	transition:all 1s;
 }
 
