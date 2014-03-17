@@ -156,7 +156,6 @@ input[type="radio"] + label{
 	animation-iteration-count: infinite;
 	z-index: -1;
 }
-
 .cloud:nth-child(1n){
 	top:0%;
 	-webkit-animation-delay: 2s;
