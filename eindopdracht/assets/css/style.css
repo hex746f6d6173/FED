@@ -124,6 +124,12 @@ article{
 	column-count:3;
 }
 
+article + article:before{
+	content:"~";
+	text-align: center;
+	display: block;
+}
+
 video{
 	width: 100%;
 }
@@ -148,6 +154,7 @@ img{
 	background-size: cover;
 	box-shadow: inset 0px 0px 150px 0px black;
 	background-attachment: fixed;
+	overflow: hidden;
 }
 .jumbo_img h1{
 	color: white;

@@ -10,6 +10,24 @@ var animateHeaderWithProgression = function(p) {
 
     var paddings = pI * 1;
 
+    $("section").each(function() {
+        if (!$(this).hasClass("jumbo")) {
+            var twoTimes = p * 2
+
+            var out_min = 0.3;
+            var out_max = 1;
+
+            //var progressHalfTime = twoTimes * (1 - 0.1) / (2 - 0) + 0.1;
+
+            var progressHalfTime = 0.4 * twoTimes + 0.1;
+
+            $(this).css({
+                opacity: progressHalfTime
+            });
+
+        }
+    });
+
     $("body>header").css({
         backgroundColor: "rgba(70, 70, 70, " + p + ")"
     });
