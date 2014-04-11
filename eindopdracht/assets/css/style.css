@@ -507,3 +507,11 @@ article.single{
 section.single{
 	width: 100%;
 }
+
+.no-js body>header{
+	background-color: rgb(70,70,70) !important;
+}
+
+.no-js .jumbo{
+	height:85vh;
+}
