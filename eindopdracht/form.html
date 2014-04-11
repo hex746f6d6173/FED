@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+	<title>CMD Amsterdam</title>
+	<meta charset="utf-8">
+	<meta name="description" content="De opleiding Communication & Multimedia Design (CMD) Amsterdam leert studenten alles over het ontwerpen van online interactieve media. Dit betekent het begrijpen, bedenken en maken van interactieve media zoals websites, mobiele applicaties en interactieve televisie. Bij het ontwerpen van interactieve media staat de mens centraal. Niet alleen als eindgebruiker van een toepassing maar ook in de context van zijn leefomgeving. Studenten doen toegepast onderzoek en leren hun ontwerpen te testen op usability, gebruikersbehoefte en meetbare eindresultaten. Ze leren werken in multidisciplinaire projectteams aan opdrachten voor echte projectpartners.">
+	<meta name="keywords" content="CMD,Communication,Media,Design,Amsterdam,HvA,Hogeschool">
+	<meta name="author" content="Tomas Harkema">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+		<nav id="navigation">
+			<div class="logo">CMDA</div>
+			<div class="pull_right aanmelden">
+				<a href="#" class="button">Aanmelden</a>
+			</div>
+			<div class="pull_right stackbuttonContainer">
+				<a href="#navigation" class="stackbutton">—<br>—<br>—</a>
+				<a href="#" class="stackbuttonClose">—<br>—<br>—</a>
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li>Opleiding</li>
+				<li>Onderwijsprogramma</li>
+				<li>Organisatie</li>
+				<li>Stages en Projecten</li>
+			</ul>
+		</nav>
+	</header>
+	<section class="jumbo">
+		<div class="jumbo_img" style="background-image:url('assets/img/header.jpg');">
+			<h1>Meld je aan!</h1>
+		</div>
+	</section>
+
+	<div class='content'>
+
+		<section class="single">
+			<article class="single">
+			<h1>Aanmelden</h1>
+
+			<p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!<br>
+			Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+
+			<p><em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</em></p>
+
+			<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.<br>
+			Voor vragen of opmerkingen kunt u contact [link: contact] met ons op.</p>
+
+			<!-- BRONNEN:
+			http://staffannoteberg.com/html5-pattern.html
+			http://www.molenaar-technologies.nl/regex-op-zn-nederlands/
+			-->
+			</article>
+			<form>
+				<fieldset>
+					<legend>Contactgegevens:</legend>
+
+					<label for="name">Naam</label>
+					<input type="text" id="name" placeholder="Naam" required><br>
+
+					<label for="bedrijf">Bedrijf</label>
+					<input type="text" id="bedrijf" placeholder="bedrijf" required><br>
+
+					<label for="adres">Adres</label>
+					<input type="text" id="adres" placeholder="Adres" required pattern="/^([1-9][e][\s])*([a-zA-Z]+(([\.][\s])|([\s]))?)+[1-9][0-9]*(([-][1-9][0-9]*)|([\s]?[a-zA-Z]+))?$/i" title="dutch address"><br>
+
+					<label for="postcode">Postcode</label>
+					<input type="text" id="postcode" placeholder="Postcode" required pattern="/^[1-9][0-9]{3}[\s]?[A-Za-z]{2}$/i" title="dutch postal code"><br>
+
+					<label for="plaats">Plaats</label>
+					<input type="text" id="plaats" placeholder="Plaats" required><br>
+
+					<label for="telefoon">Telefoon</label>
+					<input type="text" id="telefoon" placeholder="Telefoon" required pattern="(\+?\d[- .]*){7,13}" title="international, national or local phone number"><br>
+
+					<label for="email">Email</label>
+					<input type="email" id="email" placeholder="Email" required><br>
+
+				</fieldset>
+
+				<fieldset>
+
+					<legend>Ik wil mijn aanmelden:</legend>
+
+					<input type="radio" name="aanmelden" value="project" id="project"><label for="project">Voor een project</label><br>
+					<input type="radio" name="aanmelden" value="stage" id="stage"><label for="stage">Als stagebedrijf</label>
+
+				</fieldset>
+
+
+				<fieldset>
+					<legend>Project</legend>
+
+					<label for="titel">Titel</label>
+					<input type="text" name="titel" id="titel" placeholder="Titel"><br>
+
+					<label for="opdrachtomschr">Opdrachtomschrijving</label>
+					<textarea name="opdrachtomschr" id="opdrachtomschr"></textarea><br>
+
+					<label for="doelgroepomschr">Doelgroepomschrijving</label>
+					<textarea name="doelgroepomschr" id="doelgroepomschr"></textarea><br>
+
+					<label for="doelstelling">Doelstelling/intentievanhetproject</label>
+					<textarea name="doelstelling" id="doelstelling"></textarea><br>
+
+					<label for="looptijd">Looptijd</label>
+					<input type="text" name="looptijd" id="looptijd"><br>
+
+					<label for="deadline">Deadline</label>
+					<input type="text" name="deadline" id="deadline"><br>
+
+					<label>Geschikt voor</label><br>
+					<input type="radio" name="geschikt1" id="eerstejaars"><label for="eerstejaars">eerstejaars studenten</label><br>
+					<input type="radio" name="geschikt1" id="tweedejaars"><label for="tweedejaars">tweedejaars studenten</label><br>
+					<input type="radio" name="geschikt1" id="derdejaars"><label for="derdejaars">derdejaars studenten</label><br>
+					<input type="radio" name="geschikt1" id="afstudeer"><label for="afstudeer">afstudeer studenten</label><br>
+					<input type="radio" name="geschikt1" id="onbekend"><label for="onbekend">onbekend</label><br>
+				</fieldset>
+
+			</form>
+		</section>
+		</div>
+	<footer>
+		<div class="container">
+			<div class="columns">
+				<div class="column">
+					<h1>Sitemap</h1>
+					<ul>
+						<li>Opleiding</li>
+						<ul>
+							<li>Visie & Beleid</li>
+							<li>Opbouw Studieprogramma</li>
+							<li>Competenties</li>
+							<li>Diploma</li>
+							<li>Beroepen</li>
+						</ul>
+						<li>Onderwijsprogramma</li>
+						<ul>
+							<li>Mededelingen</li>
+							<li>Uitagenda</li>
+							<li>Propedeuse</li>
+							<li>Verdieping 1</li>
+							<li>Verdieping 2</li>
+							<li>Afstuderen</li>
+						</ul>
+						
+						<li>Organisatie</li>
+						<ul>
+							<li>Contact</li>
+							<li>Blog</li>
+							<li>Docenten</li>
+							<li>Onderwijsbureau</li>
+							<li>Stagebureau</li>
+							<li>Buitenlandbureau</li>
+							<li>Examencommissie</li>
+							<li>Decaan</li>
+						</ul>
+						<li>Stages en Projecten</li>
+						<ul>
+							<li>Stages</li>
+							<li>Projecten</li>
+						</ul>
+					</ul>
+				</div>
+				<div class="column">
+					<h1>Contact</h1>
+					CMD Amsterdam
+					Bezoekadres: Gebouw Theo Thijssenhuis (TTH), Wibautstraat 2-4, 1091 GM Amsterdam
+					Postadres: Postbus 1025, 1000 BA Amsterdam
+					Telefoon: 020 595 1855
+					Email: <a href="#">info@cmd.hva.nl</a>
+					RSS: <a href="#">Feed intranet</a>
+				</div>
+				<div class="column">
+					<h1>Zoeken</h1>
+					<form>
+						<input type="text">
+						<input type="submit">
+					</form>
+				</div>
+				<div class="column">
+					<h1>About</h1>
+					CMD Amsterdam is een ontwerp opleiding voor Interactieve Media.
+					Op de opleiding Communication & Multimedia Design (CMD) Amsterdam leer je alles over het ontwerpen van online interactieve media. Dit betekent begrijpen, bedenken en maken van interactieve mediatoepassingen zoals websites, mobiele applicaties en interactieve televisie.
+				</div>
+				<div class="column">
+					<h1>Credits</h1>
+					© 2007 Hogeschool van Amsterdam - DMCI - CMD Amsterdam
+					<a href="#">Geef ons feedback</a>
+				</div>
+			</div>
+			</div>
+			
+		</footer>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+			<script src="assets/js/script.js"></script>
+	</body>
+</html>
